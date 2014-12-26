@@ -32,6 +32,140 @@
 				<md-text-float label="Search for" ng-model="searchTerm"></md-text-float>
 			</form>
 		</div>
+    <section layout="row" layout-sm="column" layout-align="center center">
+      <md-button>BUTTON</md-button>
+      <md-button md-no-ink class="md-primary">Primary (md-noink)</md-button>
+      <md-button ng-disabled="true" class="md-primary">Disabled</md-button>
+      <md-button class="md-warn">Warn</md-button>
+    </section>
+
+    <section layout="row" layout-sm="column" layout-align="center center">
+      <md-button class="md-raised">Button</md-button>
+      <md-button class="md-raised md-primary">Primary</md-button>
+      <md-button ng-disabled="true" class="md-raised md-primary">Disabled</md-button>
+      <md-button class="md-raised md-warn">Warn</md-button>
+      <div class="label">raised</div>
+    </section>
+
+    <section layout="row" layout-sm="column" layout-align="center center">
+        <md-button class="md-fab" aria-label="Time">
+            <md-icon icon="https://material.angularjs.org/img/icons/ic_access_time_24px.svg" style="width: 24px; height: 24px;"></md-icon>
+        </md-button>
+      <md-button class="md-fab" aria-label="New document">
+        <md-icon icon="/img/icons/ic_insert_drive_file_24px.svg" style="width: 24px; height: 24px;"></md-icon>
+      </md-button>
+        <md-button class="md-fab" ng-disabled="true" aria-label="Comment">
+            <md-icon icon="/img/icons/ic_comment_24px.svg" style="width: 24px; height: 24px;"></md-icon>
+        </md-button>
+        <md-button class="md-fab md-primary" md-theme="cyan" aria-label="Profile">
+            <md-icon icon="/img/icons/ic_people_24px.svg" style="width: 24px; height: 24px;"></md-icon>
+        </md-button>
+      <div class="label">FAB</div>
+    </section>
+  <section layout="row" layout-sm="column" layout-align="center center">
+        <md-button ng-href="http://baidu.com" target="_blank">Go to Baidu</md-button>
+        <md-button>RSVP</md-button>
+    </section>
+    <section layout="row" layout-sm="column" layout-align="center center">
+      <md-button class="md-primary md-hue-1">Primary Hue 1</md-button>
+      <md-button class="md-warn md-raised md-hue-2">Warn Hue 2</md-button>
+      <md-button class="md-accent">Accent</md-button>
+      <md-button class="md-accent md-raised md-hue-3">Accent Hue 3</md-button>
+      <div class="label">Themed</div>
+    </section>
+
+    Bottom Sheet
+    <div ng-controller="BottomSheetExample">
+  <p style="padding-left: 20px;">
+    Bottom sheet can be dismissed with the service or a swipe down.
+  </p>
+  <div class="bottom-sheet-demo inset" layout="column" layout-sm="row" layout-align="center">
+    <md-button class="md-primary" ng-click="showListBottomSheet($event)">
+      Show as List
+    </md-button>
+    <div style="width:50px;"></div>
+    <md-button class="md-primary" ng-click="showGridBottomSheet($event)">
+      Show as Grid
+    </md-button>
+  </div>
+  <br/>
+  <b layout="row" layout-align="center center" layout-margin>
+    {{alert}}
+  </b>
+</div>
+
+ <md-card style="display:none;">
+      <img src="img/washedout.png" class="md-card-image" alt="Washed Out" pagespeed_url_hash="3292878804">
+      <h2>Paracosm</h2>
+      <p>
+        The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+        two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+      </p>
+    </md-card>
+
+    <div ng-controller="AppCtrl" class="full" layout="column" layout-margin>
+  <p class="inset">
+    Open a dialog over the app's content. Press escape or click outside to close the dialog.
+  </p>
+  <div layout="column" layout-align="center">
+    <md-button class="md-primary" ng-click="showAlert($event)">
+      Alert Dialog
+    </md-button>
+    <div class="gap"></div>
+    <md-button class="md-primary" ng-click="showConfirm($event)">
+      Confirm Dialog
+    </md-button>
+    <div class="gap"></div>
+    <md-button class="md-primary" ng-click="showAdvanced($event)">
+      Custom Dialog
+    </md-button>
+  </div>
+  <br/>
+  <b layout="row" layout-align="center center" layout-margin>
+    {{alert}}
+  </b>
+</div>
+
+<div layout="column" style="padding-bottom: 15px;">
+  <md-toolbar class="md-accent">
+    <div class="md-toolbar-tools">
+      <span class="md-flex">Toolbar: md-accent</span>
+    </div>
+  </md-toolbar>
+  <md-content class="md-padding" style="height: 600px;">
+    Lorem ipsum dolor sit amet, ne quod novum mei. Sea omnium invenire mediocrem at, in lobortis conclusionemque nam. Ne deleniti appetere reprimique pro, inani labitur disputationi te sed. At vix sale omnesque, id pro labitur reformidans accommodare, cum labores honestatis eu. Nec quem lucilius in, eam praesent reformidans no. Sed laudem aliquam ne.
+    <p>
+Facete delenit argumentum cum at. Pro rebum nostrum contentiones ad. Mel exerci tritani maiorum at, mea te audire phaedrum, mel et nibh aliquam. Malis causae equidem vel eu. Noster melius vis ea, duis alterum oporteat ea sea. Per cu vide munere fierent.
+    </p>
+    <p>
+Ad sea dolor accusata consequuntur. Sit facete convenire reprehendunt et. Usu cu nonumy dissentiet, mei choro omnes fuisset ad. Te qui docendi accusam efficiantur, doming noster prodesset eam ei. In vel posse movet, ut convenire referrentur eum, ceteros singulis intellegam eu sit.
+    </p>
+    <p>
+Sit saepe quaestio reprimique id, duo no congue nominati, cum id nobis facilisi. No est laoreet dissentias, idque consectetuer eam id. Clita possim assueverit cu his, solum virtute recteque et cum. Vel cu luptatum signiferumque, mel eu brute nostro senserit. Blandit euripidis consequat ex mei, atqui torquatos id cum, meliore luptatum ut usu. Cu zril perpetua gubergren pri. Accusamus rationibus instructior ei pro, eu nullam principes qui, reque justo omnes et quo.
+    </p>
+    <p>
+Sint unum eam id. At sit fastidii theophrastus, mutat senserit repudiare et has. Atqui appareat repudiare ad nam, et ius alii incorrupte. Alii nullam libris his ei, meis aeterno at eum. Ne aeque tincidunt duo. In audire malorum mel, tamquam efficiantur has te.
+    </p>
+    <p>
+Qui utamur tacimates quaestio ad, quod graece omnium ius ut. Pri ut vero debitis interpretaris, qui cu mentitum adipiscing disputationi. Voluptatum mediocritatem quo ut. Fabulas dolorem ei has, quem molestie persequeris et sit.
+    </p>
+    <p>
+Est in vivendum comprehensam conclusionemque, alia cetero iriure no usu, te cibo deterruisset pro. Ludus epicurei quo id, ex cum iudicabit intellegebat. Ex modo deseruisse quo, mel noster menandri sententiae ea, duo et tritani malorum recteque. Nullam suscipit partiendo nec id, indoctum vulputate per ex. Et has enim habemus tibique. Cu latine electram cum, ridens propriae intellegat eu mea.
+    </p>
+    <p>
+Duo at aliquid mnesarchum, nec ne impetus hendrerit. Ius id aeterno debitis atomorum, et sed feugait voluptua, brute tibique no vix. Eos modo esse ex, ei omittam imperdiet pro. Vel assum albucius incorrupte no. Vim viris prompta repudiare ne, vel ut viderer scripserit, dicant appetere argumentum mel ea. Eripuit feugait tincidunt pri ne, cu facilisi molestiae usu.
+    </p>
+    <p>
+Qui utamur tacimates quaestio ad, quod graece omnium ius ut. Pri ut vero debitis interpretaris, qui cu mentitum adipiscing disputationi. Voluptatum mediocritatem quo ut. Fabulas dolorem ei has, quem molestie persequeris et sit.
+    </p>
+    <p>
+Est in vivendum comprehensam conclusionemque, alia cetero iriure no usu, te cibo deterruisset pro. Ludus epicurei quo id, ex cum iudicabit intellegebat. Ex modo deseruisse quo, mel noster menandri sententiae ea, duo et tritani malorum recteque. Nullam suscipit partiendo nec id, indoctum vulputate per ex. Et has enim habemus tibique. Cu latine electram cum, ridens propriae intellegat eu mea.
+    </p>
+    <p>
+Duo at aliquid mnesarchum, nec ne impetus hendrerit. Ius id aeterno debitis atomorum, et sed feugait voluptua, brute tibique no vix. Eos modo esse ex, ei omittam imperdiet pro. Vel assum albucius incorrupte no. Vim viris prompta repudiare ne, vel ut viderer scripserit, dicant appetere argumentum mel ea. Eripuit feugait tincidunt pri ne, cu facilisi molestiae usu.
+    </p>
+  </md-content>
+</div>
 	</md-content>
 
 
